@@ -4,7 +4,13 @@ This is a simple docker container which offers the usage of rotate-backup in an 
 
 ### Usage
 
-docker run --rm -it -v /folder/to/backup:/data -e "ROTATION_SCHEME=--dry-run --daily=7 --weekly=4 --monthly=12"
+   docker run --rm -it -v /folder/to/backup:/data -e "ROTATION_SCHEME=--dry-run --daily=7 --weekly=4 --monthly=12"
 
+>  test
 > 
-> 
+
+# push new image
+
+login:
+   echo $PAT | docker login ghcr.io --username legeiger --password-stdin
+
