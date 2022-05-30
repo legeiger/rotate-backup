@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-ENV ROTATION_SCHEME=""
+ENV ROTATE_OPTIONS=""
 
 # Install pip requirements
 RUN python -m pip install rotate-backups
